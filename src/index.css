@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom radio button styles */
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 17.5px;
+    height: 17px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  input[type="radio"]:checked {
+    border-color: rgb(22, 26, 47);
+    background-color: #fff;
+  }
+  
+  input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 3.2px;
+    left: 3.2px;
+    width: 9px;
+    height: 9px;
+    background-color: rgb(22, 26, 47);
+    border-radius: 50%;
+  }
+  
+
+  @media only screen and (max-width: 1700px) {
+    input[type="radio"] {
+      -webkit-appearance: none;
+      appearance: none;
+      border: 2px solid #ddd;
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+    }
+    
+    input[type="radio"]:checked {
+      border-color: rgb(22, 26, 47);
+      background-color: #fff;
+    }
+    
+    input[type="radio"]:checked::before {
+      content: '';
+      position: absolute;
+      top: 3.2px;
+      left: 3.2px;
+      width: 9px;
+      height: 9px;
+      background-color: rgb(22, 26, 47);
+      border-radius: 50%;
+    }
+  }
+
+  /* Add this in your global CSS file or a component-specific CSS file */
+  /* .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  input:checked + .checkmark {
+    background-color: #f97316; /* Orange color for checked state 
+    border-color: #f97316;
+  }
+  
+  input:checked + .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 10px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  input:focus + .checkmark {
+    outline: 2px solid #f97316; /* Optional: outline color when focused 
+  } */
+
+  /* Custom styles to change the checkbox tick color */
+input[type="checkbox"] {
+  accent-color: #222222; /* Dark gray color */
+}

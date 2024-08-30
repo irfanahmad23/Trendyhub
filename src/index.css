@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Custom radio button styles */
-input[type="radio"] {
+/* input[type="radio"] {
     -webkit-appearance: none;
     appearance: none;
     border: 2px solid #ddd;
@@ -60,7 +60,7 @@ input[type="radio"] {
       background-color: rgb(22, 26, 47);
       border-radius: 50%;
     }
-  }
+  } */
 
   /* Add this in your global CSS file or a component-specific CSS file */
   /* .checkmark {
@@ -95,6 +95,6 @@ input[type="radio"] {
   } */
 
   /* Custom styles to change the checkbox tick color */
-input[type="checkbox"] {
+input[type="radio"] {
   accent-color: #222222; /* Dark gray color */
 }

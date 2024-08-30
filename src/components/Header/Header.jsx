@@ -10,14 +10,15 @@ export default function Header() {
 
     return (
         <header className="sticky z-50 top-6 left-0 ">
-            <nav className=" bg-white shadow-md mx-auto flex items-center justify-between font-semibold px-4 py-3 lg:px-8 lg:py-4 sm:rounded-full max-w-full md:max-w-[95%] lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[65%]">
-                <Link to="/" className="flex items-center">
-                    <img
-                        src="https://yourdomain.com/path-to-trendyhub-logo.png" // Replace with your TrendyHub logo
-                        className="h-8"
-                        alt="TrendyHub Logo"
-                    />
-                </Link>
+            <nav className=" bg-white shadow-md mx-auto flex items-center h-16 justify-between font-semibold px-4 py-3 lg:px-8 lg:py-4 sm:rounded-full max-w-full md:max-w-[95%] lg:max-w-[90%] xl:max-w-[85%] 2xl:max-w-[65%]">
+            
+  <Link to="/" className="flex items-center">
+    <img
+      src="/trendyhub/lg-2.png" // Replace with your TrendyHub logo
+      className="h-20 w-20 max-h-full" // Adjust to fit within navbar height
+      alt="TrendyHub Logo"
+    />
+  </Link>
                 <div className="flex items-center lg:hidden">
                     <button
                         onClick={toggleMenu}
@@ -50,11 +51,7 @@ export default function Header() {
                                     }>
                         Shop
                     </NavLink>
-                    <NavLink to="/about"  className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-red-700" : "text-gray-800"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-700 lg:p-0`
-                                    }>
-                        About Us
-                    </NavLink>
+                   
                     <NavLink to="/contact"  className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-red-700" : "text-gray-800"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-red-700 lg:p-0`
                                     }>
@@ -94,8 +91,8 @@ export default function Header() {
                 <div className="flex items-center justify-between px-4 py-3">
                     <Link to="/" className="flex items-center">
                         <img
-                            src="https://yourdomain.com/path-to-trendyhub-logo.png" // Replace with your TrendyHub logo
-                            className="h-8"
+                            src="/trendyhub/lg-1.png" // Replace with your TrendyHub logo
+                            className="h-20 w-20"
                             alt="TrendyHub Logo"
                         />
                     </Link>
@@ -134,13 +131,7 @@ export default function Header() {
                     >
                         Shop
                     </NavLink>
-                    <NavLink
-                        to="/about"
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                        onClick={toggleMenu}
-                    >
-                        About Us
-                    </NavLink>
+                   
                     <NavLink
                         to="/contact"
                         className="block px-4 py-2 text-gray-700 hover:bg-gray-100"

@@ -31,30 +31,30 @@ const Shop = () => {
   const [activeCategory, setActiveCategory] = useState(''); // State for active category, empty string means no category is selected
   // List of products
   const products = [
-    { image: 'casuel.jpg', name: ' Floral Dress', price: '₹2,449', rating: 5, sale: false, stock: false, category: 'Casual Dress' },
+    { image: 'floral-2.webp', name: ' Floral Dress', price: '₹2,449', rating: 5, sale: false, stock: false, category: 'Casual Dress' },
     { image: 'casuel-2.jpg', name: ' Salwar Suit', price: '₹3,849', rating: 5, sale: false, stock: false, category: 'Casual Dress' },
-    { image: 'casuel-3.jpg', name:  'Chic Dress', price: '₹1,300', rating: 5, sale: false, stock: false, category: 'Casual Dress' },
-    { image: 'casuel-4.jpg', name: ' Blue Gown', price: '₹4,789', rating: 5, sale: false, stock: false, category: 'Casual Dress' },
-    { image: 'western-2-1.jpg', name: 'Mini Dress ', price: '₹7,349', originalPrice: '₹10,302', rating: 5, sale: true, stock: false, category: 'Western Dress' },
-    { image: 'western-2-4.jpg', name: ' Top-Skirt', price: '₹5,149', rating: 5, sale: false, stock: false, category: 'Western Dress' },
-    { image: 'western-6.jpg', name: ' Mini-Dress', price: '₹1,249', rating: 5, sale: false, stock: false , category: 'Western Dress'},
-    { image: 'western-2-7.jpg', name: 'Strap-Top-skirt', price: '₹5,349', rating: 5, sale: false, stock: true , category: 'Western Dress'},
-    { image: 'bomber-4.jpg', name: 'Bomber Jackets', price: '₹4,505', originalPrice: '$59.0', rating: 5, sale: true, stock: false ,category: 'Jackets' },
-    { image: 'denim-7.jpg', name: 'Denim Jackets', price: '₹3,249', rating: 4, sale: false, stock: true, category: 'Jackets' },
-    { image: 'bomber-7.jpg', name: 'T-Shirts', price: '₹1,190', rating: 4, sale: false, stock: false, category: 'Jackets' },
-    { image: 'wedding-3.png', name: 'Wedding Dress', price: '₹120,000', rating: 5, sale: false, stock: true , category: 'Wedding Dress'},
+    { image: 'chic dress-1.webp', name:  'Chic Dress', price: '₹1,300', rating: 5, sale: false, stock: false, category: 'Casual Dress' },
+    { image: 'gown.webp', name: ' Blue Gown', price: '₹4,789', rating: 5, sale: false, stock: false, category: 'Casual Dress' },
+    { image: 'min-5.webp', name: 'Mini Dress ', price: '₹7,349', originalPrice: '₹10,302', rating: 5, sale: true, stock: false, category: 'Western Dress' },
+    { image: 'top-3.jfif', name: ' Top-Skirt', price: '₹5,149', rating: 5, sale: false, stock: false, category: 'Western Dress' },
+    { image: 'min-4.webp', name: ' Mini-Dress', price: '₹1,249', rating: 5, sale: false, stock: false , category: 'Western Dress'},
+    { image: 'top-6.webp', name: 'Strap-Top-skirt', price: '₹5,349', rating: 5, sale: false, stock: true , category: 'Western Dress'},
+    { image: 'jacket-1.webp', name: 'Bomber Jackets', price: '₹4,505', originalPrice: '$59.0', rating: 5, sale: true, stock: false ,category: 'Jackets' },
+    { image: 'jacket-6.webp', name: 'Denim Jackets', price: '₹3,249', rating: 4, sale: false, stock: true, category: 'Jackets' },
+    { image: 't-shirt.webp', name: 'T-Shirts', price: '₹1,190', rating: 4, sale: false, stock: false, category: 'Jackets' },
+    { image: 'wed-4.jfif', name: 'Wedding Dress', price: '₹120,000', rating: 5, sale: false, stock: true , category: 'Wedding Dress'},
     { image: 'weding-1.webp', name: ' Wedding Dress', price: '₹125,000', rating: 4, sale: false, stock: false , category: 'Wedding Dress'},
-    { image: 'weding-4.jpg', name: ' Wedding Dress', price: '₹121,000', rating: 5, sale: false, stock: true , category: 'Wedding Dress'},
-    { image: 'nighty-1.jpg', name: 'Nighty-Gown', price: '₹1,845', rating: 5, sale: true, stock: false , category: 'Nightwear'},
+    { image: 'wed-6.webp', name: ' Wedding Dress', price: '₹121,000', rating: 5, sale: false, stock: true , category: 'Wedding Dress'},
+    { image: 'nighty-1.webp', name: 'Nighty-Gown', price: '₹1,845', rating: 5, sale: true, stock: false , category: 'Nightwear'},
     { image: 'night-6.jpg', name: 'Nightwear-Suit', price: '₹1,959', rating: 5, sale: false, stock: false , category: 'Nightwear'},
-    { image: 'night-3.webp', name: 'Nighty-Nest', price: '₹1,679', rating: 4, sale: true, stock: false , category: 'Nightwear'},
+    { image: 'nighty-2.jpg', name: 'Nighty-Nest', price: '₹1,679', rating: 4, sale: true, stock: false , category: 'Nightwear'},
     { image: 'img3.jpg', name: 'Casual Shirts', price: '₹1287', rating: 5, sale: false, stock: false, category: 'Casual Dress' },
     { image: 'naqab-3.jpg', name: 'Redish Niqab', price: '₹3,269', rating: 4, sale: false, stock: true , category: 'Niqab' },
     { image: 'abaya.webp', name: 'Abaya', price: '₹2,989', rating: 4, sale: false, stock: true , category: 'Niqab'},
     { image: 'naqab-4.jpg', name: 'Black Niqab', price: '₹2,679', rating: 4, sale: false, stock: true , category: 'Niqab'},
     { image: 'md-sar-2.webp', name: 'Stylish Saree', price: '₹3,699', rating: 3, sale: false, stock: true, category: 'Saree' },
     { image: 'saree-6.webp', name: 'Green Saree', price: '₹2,799', rating: 5, sale: true, stock: false, category: 'Saree' },
-    { image: 'saree-5.1.webp', name: 'Silk Saree', price: '₹3,139', rating: 4, sale: false, stock: false , category: 'Saree'},
+    { image: 'silk-saree-1.jpg', name: 'Silk Saree', price: '₹3,139', rating: 4, sale: false, stock: false , category: 'Saree'},
     { image: 'shoes-4.jpg', name: 'Pink Shoes', price: '₹5,355', rating: 4, sale: false, stock: false , category: 'Footwear'},
     { image: 'shoes-3.jpg', name: 'High Heels', price: '₹28,800', rating: 4, sale: false, stock: false , category: 'Footwear'},
     { image: 'shoes-2.jpg', name: 'Sandal', price: '₹2,233', rating: 4, sale: false, stock: false , category: 'Footwear'},
@@ -285,7 +285,6 @@ const Shop = () => {
                 ? 'bg-green-500'
                 : color === 'pink'
                 ? 'bg-pink-500'
-                
                 : color === 'cream'
                 ? 'bg-[#f5f5dc]' // Custom color for cream
                 : ''

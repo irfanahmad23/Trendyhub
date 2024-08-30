@@ -12,7 +12,7 @@ export default function Home() {
 
             <div
                 className="w-full h-screen bg-cover bg-center -mt-20 relative"
-                style={{ backgroundImage: "url('/trendyhub/pexels-eliasdecarvalho-1144834.jpg')" }} 
+                style={{ backgroundImage: "url('/trendyhub/bg-home-2.jpg')" }} 
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
 
@@ -52,63 +52,93 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 md:px-20 mb-20">
     {/* First Card */}
     <div className="relative group bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="/trendyhub/image1.webp" alt="Fashion 1" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
+        <img src="/trendyhub/casuel-4.jpg" alt="Fashion 1" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
             <div className="text-center text-white">
-                <h3 className="text-lg font-semibold mb-2">Stylish Dress</h3>
-                <p className="text-xl font-bold">$49.99</p>
-                <a href="/shop" className="mt-2 inline-block px-4 py-2 bg-red-700 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now</a>
+                <h3 className="text-2xl font-bold mb-2">Casual Outfit</h3>
+                
+                <Link to="/shop"  className="mt-2 inline-block px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now  </Link>
             </div>
         </div>
     </div>
     {/* Repeat for other cards */}
     <div className="relative group bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="/trendyhub/image2.jpg" alt="Fashion 2" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
+        <img src="/trendyhub/western-7.jpg" alt="Fashion 2" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
             <div className="text-center text-white">
-                <h3 className="text-lg font-semibold mb-2">Elegant Gown</h3>
-                <p className="text-xl font-bold">$79.99</p>
-                <a href="/shop" className="mt-2 inline-block px-4 py-2 bg-red-700 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now</a>
+                <h3 className="text-2xl font-bold mb-2">Western Outfit</h3>
+              
+                <Link to="/shop"  className="mt-2 inline-block px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now  </Link>
             </div>
         </div>
     </div>
     <div className="relative group bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="/trendyhub/img3.jpg" alt="Fashion 3" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
+        <img src="/trendyhub/bomber-4.jpg" alt="Fashion 3" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
             <div className="text-center text-white">
-                <h3 className="text-lg font-semibold mb-2">Casual Outfit</h3>
-                <p className="text-xl font-bold">$39.99</p>
-                <a href="/shop" className="mt-2 inline-block px-4 py-2 bg-red-700 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now</a>
+                <h3 className="text-2xl font-bold mb-2">Jackets</h3>
+                
+                <Link to="/shop"  className="mt-2 inline-block px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now  </Link>
             </div>
         </div>
     </div>
     {/* Repeat for remaining cards */}
     <div className="relative group bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="/trendyhub/img4.jpg" alt="Fashion 4" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
+        <img src="/trendyhub/wedding-3.png" alt="Fashion 4" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
             <div className="text-center text-white">
-                <h3 className="text-lg font-semibold mb-2">Trendy Jacket</h3>
-                <p className="text-xl font-bold">$59.99</p>
-                <a href="/shop" className="mt-2 inline-block px-4 py-2 bg-red-700 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now</a>
+                <h3 className="text-2xl font-bold mb-2">Wedding Dress</h3>
+                
+                <Link to="/shop"  className="mt-2 inline-block px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now  </Link>
             </div>
         </div>
     </div>
     <div className="relative group bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="/trendyhub/img5.jpg" alt="Fashion 5" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
+        <img src="/trendyhub/night-5.jpeg" alt="Fashion 5" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
             <div className="text-center text-white">
-                <h3 className="text-lg font-semibold mb-2">Chic Pants</h3>
-                <p className="text-xl font-bold">$44.99</p>
-                <a href="/shop" className="mt-2 inline-block px-4 py-2 bg-red-700 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now</a>
+                <h3 className="text-2xl font-bold mb-2">Nightwear</h3>
+            
+                <Link to="/shop"  className="mt-2 inline-block px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now  </Link>
             </div>
         </div>
     </div>
     <div className="relative group bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="/trendyhub/img6.jpg" alt="Fashion 6" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
+        <img src="/trendyhub/naqab-3.1.jpg" alt="Fashion 6" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
             <div className="text-center text-white">
-                <h3 className="text-lg font-semibold mb-2">Classic Shirt</h3>
-                <p className="text-xl font-bold">$29.99</p>
+                <h3 className="text-2xl font-bold mb-2">Niqab</h3>
+                
+                <Link to="/shop"  className="mt-2 inline-block px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now  </Link>
+            </div>
+        </div>
+    </div>
+    <div className="relative group bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="/trendyhub/saree-1.jpg" alt="Fashion 6" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="text-center text-white">
+                <h3 className="text-2xl font-bold mb-2">Saree</h3>
+                
+                <Link to="/shop"  className="mt-2 inline-block px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now  </Link>
+            </div>
+        </div>
+    </div>
+    <div className="relative group bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="/trendyhub/shoes-2.jpg" alt="Fashion 6" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="text-center text-white">
+                <h3 className="text-2xl font-bold mb-2">Footwear</h3>
+               
+                <Link to="/shop"  className="mt-2 inline-block px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now  </Link>
+            </div>
+        </div>
+    </div>
+    <div className="relative group bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="/trendyhub/img3.jpg" alt="Fashion 6" className="w-full h-64 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="text-center text-white">
+                <h3 className="text-2xl font-bold mb-2">Classic Shirt</h3>
+                
                 <Link to="/shop"  className="mt-2 inline-block px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition-colors">Shop Now  </Link>
             </div>
         </div>
@@ -133,14 +163,14 @@ export default function Home() {
     <div className="flex flex-wrap gap-6 justify-center mb-20" >
     {/* Card 1 */}
     <div className="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden" style={{ width: '350px' }}>
-        <img src="/trendyhub/product-1.webp" alt="Product 1" className="w-full h-96 object-cover" />
+        <img src="/trendyhub/jacket-3.webp" alt="Product 1" className="w-full h-96 object-cover" />
         <div className="p-4">
             <h3 className="text-xl font-semibold mb-2">
                 <a href="#" className="text-gray-800 hover:text-gray-600">Stylish Jacket</a>
             </h3>
             <div className="flex justify-between items-center mb-2">
                 <div className="pricing">
-                    <p className="text-lg font-bold text-gray-900"><span>$49.99</span></p>
+                    <p className="text-lg font-bold text-gray-900"><span>₹2,500</span></p>
                 </div>
                 <div className="rating flex items-center">
                     <span className="text-yellow-400">★★★★★</span>
@@ -162,17 +192,17 @@ export default function Home() {
 
     {/* Card 2 */}
     <div className="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden" style={{ width: '350px' }}>
-        <img src="/trendyhub/product-2.webp" alt="Product 3" className="w-full h-96 object-cover" />
+        <img src="/trendyhub/niqab-4.jpg" alt="Product 3" className="w-full h-96 object-cover" />
         <div className="p-4">
             <h3 className="text-xl font-semibold mb-2">
-                <a href="#" className="text-gray-800 hover:text-gray-600">Casual Shirt</a>
+                <a href="#" className="text-gray-800 hover:text-gray-600">Abaya</a>
             </h3>
             <div className="flex justify-between items-center mb-2">
                 <div className="pricing">
-                    <p className="text-lg font-bold text-gray-900"><span>$29.99</span></p>
+                    <p className="text-lg font-bold text-gray-900"><span>₹2,897</span></p>
                 </div>
                 <div className="rating flex items-center">
-                    <span className="text-yellow-400">★★★★☆</span>
+                    <span className="text-yellow-400">★★★★★</span>
                     <span className="text-gray-400"> (4)</span>
                 </div>
             </div>
@@ -198,7 +228,7 @@ export default function Home() {
             </h3>
             <div className="flex justify-between items-center mb-2">
                 <div className="pricing">
-                    <p className="text-lg font-bold text-gray-900"><span>$69.99</span></p>
+                    <p className="text-lg font-bold text-gray-900"><span>₹1,500</span></p>
                 </div>
                 <div className="rating flex items-center">
                     <span className="text-yellow-400">★★★★★</span>

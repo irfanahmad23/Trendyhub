@@ -30,8 +30,8 @@ export default function Footer() {
                     <div className="mb-8 lg:mb-0 lg:w-1/4">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="https://your-logo-url.com/logo.png" // Update logo URL
-                                className="h-12"
+                                src="/trendyhub/lg-2.png" // Update logo URL
+                                className="h-24 w-24"
                                 alt="TrendyHub Logo"
                             />
                         </Link>
